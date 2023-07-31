@@ -2,3 +2,9 @@ flask
 joblib
 flask_cors
 requests
+click
+gunicorn
+itsdangerous
+Jinja2
+MarkupSafe
+Werkzeug
