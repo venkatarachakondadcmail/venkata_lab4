@@ -15,7 +15,6 @@ def index():
 @app.route('/predict', methods=['POST'])
 def predict_weight():
     # Load the traned model
-    
     data = request.get_json()
     print('daaaatttt', data)
     length_ver = data['length_ver']
@@ -30,5 +29,5 @@ def predict_weight():
     return jsonify({'predicted_weight': prediction})
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, port= 8000)
 
