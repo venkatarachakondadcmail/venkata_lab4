@@ -1,1 +1,1 @@
-web: sh setup.sh && streamlit run app.py && python flask_app.py
+web: gunicorn app:app && sh setup.sh && streamlit run application.py
